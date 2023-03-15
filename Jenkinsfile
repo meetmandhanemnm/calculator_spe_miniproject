@@ -1,7 +1,7 @@
 pipeline {
 
     environment {
-        registry = "meetmandhane/calculator_miniproject"
+        registry = "meetmandhane/calculator"
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
@@ -32,6 +32,11 @@ pipeline {
                         dockerImage.push()
                    }
                 }
+            }
+        }
+        stage('Docker image cleanup') {
+            steps{
+                sh "docker rmi $registry"
             }
         }
     }
