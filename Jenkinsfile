@@ -21,7 +21,7 @@ pipeline {
         stage('Build Docker File'){
             steps{
                 script{
-                   dockerImage = docker.build('calculator')
+                   dockerImage = docker.build('meetmandhane/calculator')
                 }
             }
         }
