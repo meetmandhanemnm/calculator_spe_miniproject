@@ -5,3 +5,8 @@
       docker_image:
         name: meetmandhane/calculator
         source: pull
+    - name: Start docker service
+      service:
+        name: docker
+        state: started
+
