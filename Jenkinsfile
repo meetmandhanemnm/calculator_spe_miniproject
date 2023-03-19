@@ -39,5 +39,10 @@ pipeline {
                 sh "docker rmi $registry"
             }
         }
+        stage('Ansible image run') {
+            steps{
+
+            }
+        }
     }
 }
