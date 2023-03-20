@@ -41,7 +41,7 @@ public class Calculator {
                     System.out.println("Enter a number to perform factorial:");
                     a = sc.nextInt();
                     logger.info("CASE 2");
-                    System.out.println("The factorial of" +a+" is: " + factorial(a));
+                    System.out.println("The factorial of " +a+" is: " + factorial(a));
                     break;
             }
         }

@@ -4,22 +4,22 @@ import org.example.Calculator;
 public class CalculatorTest {
 
     @Test
-    public void TestAdd1() {
-        Assert.assertEquals(0,Calculator.add(-23,23));
+    public void TestFact1() {
+        Assert.assertEquals(2,Calculator.factorial(2));
     }
 
     @Test
-    public void TestAdd2() {
-        Assert.assertEquals(25,Calculator.add(23,2));
+    public void TestFact2() {
+        Assert.assertEquals(120,Calculator.factorial(5));
     }
 
     @Test
-    public void TestSub1() {
-        Assert.assertEquals(2,Calculator.sub(23,21));
+    public void TestRoot1() {
+        Assert.assertEquals(2.0,Calculator.square_root(4),0.0f);
     }
 
     @Test
-    public void TestSub2() {
-        Assert.assertEquals(0,Calculator.sub(23,23));
+    public void TestRoot2() {
+        Assert.assertEquals(9.0,Calculator.square_root(81),0.0f);
     }
 }
