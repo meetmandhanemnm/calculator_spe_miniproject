@@ -68,6 +68,9 @@ public class Calculator {
                     logger.info("CASE 4");
                     System.out.println("Power operation "+x+" ^ "+y+" results in : " + power(x,y));
                     break;
+                default:
+                    System.out.println("Please enter correct option\n");
+                    break;
             }
         }
     }
