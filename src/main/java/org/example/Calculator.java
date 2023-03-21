@@ -36,7 +36,7 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         int opt=1;
 
-        while(opt!=3) {
+        while(opt!=5) {
             logger.info("Taking input from user");
             System.out.println("Enter a choice: \n1. Square Root\n2. Factorial\n3. Natural log\n4. Power\n5. Exit");
             opt = sc.nextInt();
@@ -68,6 +68,8 @@ public class Calculator {
                     logger.info("CASE 4");
                     System.out.println("Power operation "+x+" ^ "+y+" results in : " + power(x,y));
                     break;
+                case 5:
+                    System.out.println("Thank you for using Calculator!!! BYE!!!!");
                 default:
                     System.out.println("Please enter correct option\n");
                     break;
