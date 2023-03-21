@@ -7,11 +7,13 @@ import org.apache.logging.log4j.Logger;
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
 
+    // function to perform square root function
     public static double square_root(double a) {
         logger.info("In square_root function!!");
         return Math.sqrt(a);
     }
 
+    // function to perform factorial
     public static int factorial(int a) {
         logger.info("In factorial function!!");
         int res = a;
@@ -21,11 +23,13 @@ public class Calculator {
         return res;
     }
 
+    // function to perform natural log
     public static double natural_log(double a) {
         logger.info("In natural log function!!");
         return Math.log(a);
     }
 
+    // function to perform power
     public static double power(double a, double b) {
         logger.info("In power function!!");
         return Math.pow(a,b);
