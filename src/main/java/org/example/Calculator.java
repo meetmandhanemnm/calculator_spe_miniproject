@@ -36,7 +36,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-
+        System.out.println("Welcome to Calculator!!\n");
         Scanner sc = new Scanner(System.in);
         int opt=1;
         while (opt != 5) {
